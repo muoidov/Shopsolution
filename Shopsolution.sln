@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Application", "eShopSolution.Application\Shop.Application.csproj", "{CB765DB1-2D17-4FDD-8E0C-80842FE11576}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopp.Data", "Shopp.Data\Shopp.Data.csproj", "{F8687D31-85F5-4104-BE75-DBE5429732EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopp.Data", "Shopp.Data\Shopp.Data.csproj", "{F8687D31-85F5-4104-BE75-DBE5429732EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
