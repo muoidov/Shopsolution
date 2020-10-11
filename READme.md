@@ -2,4 +2,7 @@
 # Teachnology	
 -asp net core
 # How to configure 
-# 
+# Initial package
+--tool
+--design
+--sqlserver
