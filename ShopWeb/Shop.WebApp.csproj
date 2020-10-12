@@ -8,4 +8,9 @@
     <Folder Include="NewFolder\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\eShopSolution.Application\Shop.Application.csproj" />
+    <ProjectReference Include="..\Shopp.Data\Shopp.Data.csproj" />
+  </ItemGroup>
+
 </Project>
