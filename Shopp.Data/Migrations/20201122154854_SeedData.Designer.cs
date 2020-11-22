@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Shopp.Data.EF;
 
 namespace Shopp.Data.Migrations
 {
     [DbContext(typeof(ShopDbContext))]
-    partial class ShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201122154854_SeedData")]
+    partial class SeedData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -173,10 +175,10 @@ namespace Shopp.Data.Migrations
                             Id = 1,
                             CategoryId = 1,
                             LanguageId = "vi-VN",
-                            Name = "Áo nam",
+                            Name = "Áo Nam",
                             SeoAlias = "ao-nam",
-                            SeoDescription = "Sản phẩm áo thời trang nam",
-                            SeoTitle = "Sản phẩm áo thời trang nam"
+                            SeoDescription = "Áo mặc cho nam",
+                            SeoTitle = "Áo mặc cho nam"
                         },
                         new
                         {
@@ -185,28 +187,28 @@ namespace Shopp.Data.Migrations
                             LanguageId = "en-US",
                             Name = "Men Shirt",
                             SeoAlias = "men-shirt",
-                            SeoDescription = "The shirt products for men",
-                            SeoTitle = "The shirt products for men"
+                            SeoDescription = "The shirt of man",
+                            SeoTitle = "The shirt of man"
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 2,
                             LanguageId = "vi-VN",
-                            Name = "Áo nữ",
+                            Name = "Áo Nữ",
                             SeoAlias = "ao-nu",
-                            SeoDescription = "Sản phẩm áo thời trang nữ",
-                            SeoTitle = "Sản phẩm áo thời trang women"
+                            SeoDescription = "Áo mặc cho nữ",
+                            SeoTitle = "Áo mặc cho nữ"
                         },
                         new
                         {
                             Id = 4,
                             CategoryId = 2,
                             LanguageId = "en-US",
-                            Name = "Women Shirt",
+                            Name = "women Shirt",
                             SeoAlias = "women-shirt",
-                            SeoDescription = "The shirt products for women",
-                            SeoTitle = "The shirt products for women"
+                            SeoDescription = "The shirt of woman",
+                            SeoTitle = "The shirt of woman"
                         });
                 });
 
@@ -270,7 +272,7 @@ namespace Shopp.Data.Migrations
                         {
                             Id = "vi-VN",
                             IsDefault = true,
-                            Name = "Tiếng Việt"
+                            Name = "Tieng Viet"
                         },
                         new
                         {
@@ -371,7 +373,7 @@ namespace Shopp.Data.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2020, 11, 22, 22, 55, 23, 668, DateTimeKind.Local).AddTicks(8284),
+                            DateCreated = new DateTime(2020, 11, 22, 22, 48, 53, 460, DateTimeKind.Local).AddTicks(5469),
                             OriginalPrice = 100000m,
                             Price = 200000m,
                             Stock = 0,
@@ -454,26 +456,24 @@ namespace Shopp.Data.Migrations
                         new
                         {
                             Id = 1,
-                            Description = "Áo sơ mi nam trắng Việt Tiến",
-                            Details = "Áo sơ mi nam trắng Việt Tiến",
+                            Details = "Áo nam cộc tay",
                             LanguageId = "vi-VN",
-                            Name = "Áo sơ mi nam trắng Việt Tiến",
+                            Name = "Áo Nam cộc tay ",
                             ProductId = 1,
-                            SeoAlias = "ao-so-mi-nam-trang-viet-tien",
-                            SeoDescription = "Áo sơ mi nam trắng Việt Tiến",
-                            SeoTitle = "Áo sơ mi nam trắng Việt Tiến"
+                            SeoAlias = "ao-nam-coc-tay",
+                            SeoDescription = "Áo mặc cho nam cộc tay",
+                            SeoTitle = "Áo mặc cho nam cộc tay"
                         },
                         new
                         {
                             Id = 2,
-                            Description = "Viet Tien Men T-Shirt",
-                            Details = "Viet Tien Men T-Shirt",
+                            Details = "The T-Shirt of man",
                             LanguageId = "en-US",
-                            Name = "Viet Tien Men T-Shirt",
-                            ProductId = 1,
-                            SeoAlias = "viet-tien-men-t-shirt",
-                            SeoDescription = "Viet Tien Men T-Shirt",
-                            SeoTitle = "Viet Tien Men T-Shirt"
+                            Name = "Men T-Shirt",
+                            ProductId = 2,
+                            SeoAlias = "men-Tshirt",
+                            SeoDescription = "The T-shirt of man",
+                            SeoTitle = "The T-shirt of man"
                         });
                 });
 
