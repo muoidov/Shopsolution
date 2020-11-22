@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using Shopp.Data.Entities;
 using Shopp.Data.Configurations;
+using Shopp.Data.Extensions;
 
 namespace Shopp.Data.EF
 {
@@ -28,7 +29,10 @@ namespace Shopp.Data.EF
             modelBuilder.ApplyConfiguration(new OrderDetailsConfiguration());
             modelBuilder.ApplyConfiguration(new TransactionConfiguration());
             modelBuilder.ApplyConfiguration(new PromotionConfiguration());
-            base.OnModelCreating(modelBuilder);
+            //Dataseeding
+            modelBuilder.Seed();
+         //   base.OnModelCreating(modelBuilder);
+
         }
 
         public DbSet<Product> Products { get; set; }
